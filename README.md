@@ -7,7 +7,7 @@ Welcome to the Voice-Interactive Stock and Mutual Fund Advisor! This project aim
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-  
+- [Usage](#usage)
 
 ## Introduction
 
@@ -27,3 +27,29 @@ The Voice-Interactive Stock and Mutual Fund Advisor is designed to simplify the 
 - **Ollama for LLaMA3:** For natural language understanding and generating questions.
 - **Finance API:** To fetch real-time stock and mutual fund data.
 
+## Usage
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/voice-interactive-advisor.git
+    cd voice-interactive-advisor
+    ```
+
+2. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Download the LLAMA 3 Model Locally:
+    To use LLAMA 3 in your project, you need to pull the model data onto your local machine. Run the following command in your terminal:
+    ```bash
+    ollama pull llama3
+    ```
+
+
+4. Run the application using Streamlit:
+    ```bash
+    streamlit run app.py
+    ```
+
+6. Follow the on-screen instructions to interact with the system using your voice.
