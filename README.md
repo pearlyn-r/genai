@@ -7,7 +7,7 @@ Welcome to the Voice-Interactive Stock and Mutual Fund Advisor! This project aim
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Usage](#usage)
+  
 
 ## Introduction
 
