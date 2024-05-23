@@ -49,7 +49,7 @@ The Voice-Interactive Stock and Mutual Fund Advisor is designed to simplify the 
 
 4. Run the application using Streamlit:
     ```bash
-    streamlit run app.py
+    streamlit run voicellm.py
     ```
 
 6. Follow the on-screen instructions to interact with the system using your voice.
