@@ -25,7 +25,7 @@ The Voice-Interactive Stock and Mutual Fund Advisor is designed to simplify the 
 - **Python:** For the core logic and interaction with the LLM.
 - **Whisper:** For capturing and processing voice inputs.
 - **Ollama for LLaMA3:** For natural language understanding and generating questions.
-- **Finance API:** To fetch real-time stock and mutual fund data.
+
 
 ## Usage
 
@@ -41,7 +41,7 @@ The Voice-Interactive Stock and Mutual Fund Advisor is designed to simplify the 
     ```
 
 3. Download the LLAMA 3 Model Locally:
-    To use LLAMA 3 in your project, you need to pull the model data onto your local machine. Run the following command in your terminal:
+    To use LLAMA 3 in your project, you need to pull the model data onto your local machine.Make sure to have already installed the ollama application(https://github.com/ollama/ollama?tab=readme-ov-file). Run the following command in your terminal:
     ```bash
     ollama pull llama3
     ```
