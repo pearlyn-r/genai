@@ -32,7 +32,8 @@ The Voice-Interactive Stock and Mutual Fund Advisor is designed to simplify the 
 1. Clone the repository:
     ```bash
     git clone https://github.com/pearlyn-r/genai.git
-    cd voicellm.py
+    cd genai/whisper_llama3_chatbot
+
     ```
 
 2. Install the required dependencies:
