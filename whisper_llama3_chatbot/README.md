@@ -28,7 +28,23 @@ The Voice-Interactive Stock and Mutual Fund Advisor is designed to simplify the 
 
 
 ## Usage
-
+It requires the command-line tool ffmpeg to be installed on your system, which is available from most package managers:
+```bash
+    # on Ubuntu or Debian
+    sudo apt update && sudo apt install ffmpeg
+    
+    # on Arch Linux
+    sudo pacman -S ffmpeg
+    
+    # on MacOS using Homebrew (https://brew.sh/)
+    brew install ffmpeg
+    
+    # on Windows using Chocolatey (https://chocolatey.org/)
+    choco install ffmpeg
+    
+    # on Windows using Scoop (https://scoop.sh/)
+    scoop install ffmpeg
+```
 1. Clone the repository:
     ```bash
     git clone https://github.com/pearlyn-r/genai.git
