@@ -31,8 +31,8 @@ The Voice-Interactive Stock and Mutual Fund Advisor is designed to simplify the 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/voice-interactive-advisor.git
-    cd voice-interactive-advisor
+    git clone https://github.com/pearlyn-r/genai.git
+    cd voicellm.py
     ```
 
 2. Install the required dependencies:
