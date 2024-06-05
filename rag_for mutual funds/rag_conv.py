@@ -4,8 +4,15 @@ import ollama
 import os
 import json
 from openai import OpenAI
+from audio_recorder_streamlit import audio_recorder
+from streamlit_float import *
+import whisper
 
+# Load Whisper model
+whisper_model = whisper.load_model("base")
 
+# Float feature initialization
+float_init()
 
 # Function to get relevant context from the vault based on user input
 def get_relevant_context(user_input, vault_embeddings, vault_content, top_k=3):
@@ -104,13 +111,41 @@ if st.session_state.conversation_history:
         elif msg["role"] == "assistant":
             st.write(f"**Assistant:** {msg['content']}")
 
-# Input for user query (always at the bottom)
+# Create footer container for the microphone
+footer_container = st.container()
+with footer_container:
+    audio_bytes = audio_recorder()
+
+# Transcribe audio if recording is available
+if audio_bytes:
+    # Write the audio bytes to a file
+    with st.spinner("Transcribing..."):
+        webm_file_path = "temp_audio.mp3"
+        with open(webm_file_path, "wb") as f:
+            f.write(audio_bytes)
+
+        # Transcribe audio using Whisper
+        result = whisper_model.transcribe(webm_file_path)
+        if result:
+            transcript = result['text']
+            os.remove(webm_file_path)
+
+            # Print the transcribed text
+            st.write(f"**Transcribed Text:** {transcript}")
+
+            # Call ollama_chat with the transcribed text
+            response = ollama_chat(transcript, st.session_state.system_message, vault_embeddings_tensor, vault_content, ollama_model, st.session_state.conversation_history)
+            st.write(f"**Assistant:** {response}")
+
+            footer_container.float("bottom: 0rem;")
+
+# Input for text query (always at the bottom)
 user_input = st.text_input("Ask a query about your documents", key="user_input")
 
 if st.button("Submit"):
     if user_input:
         response = ollama_chat(user_input, st.session_state.system_message, vault_embeddings_tensor, vault_content, ollama_model, st.session_state.conversation_history)
-        
+        st.write(f"**Assistant:** {response}")
         st.experimental_rerun()
     else:
         st.write("Please enter a query.")
