@@ -7,6 +7,7 @@ This project integrates Automatic Speech Recognition (ASR) and Large Language Mo
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Hardware Requirements](#hardware-requirements)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 
@@ -28,6 +29,12 @@ The Mutual Fund Advisor project leverages state-of-the-art AI technologies to pr
 - **Ollama for LLaMA 3:** For natural language understanding and response generation.
 - **Streamlit:** For creating the web application interface.
 - **Torch:** For handling embeddings and cosine similarity computations.
+
+## Hardware Pre-requisites: A recommended system configuration for installing Ollama is given below.
+
+- **CPU**: Any modern CPU with at least 4 cores recommended for running smaller models. For running 13B models, CPU with at least 8 cores is recommended. GPU is optional for Ollama, but if available can improve the performance drastically.
+- **RAM**: At least 8 GB of RAM to run the 7B models, 16 GB to run the 13B models, and 32 GB to run the 33B models.(i ran 7B model with 16gb RAM )
+- **Disk Capacity**: Recommend at least 12 GB of disk space available, to install Ollama and the base models. Additional space will be required if more models are planned to be installed.
 
 ## Setup Instructions
 It requires the command-line tool ffmpeg to be installed on your system, which is available from most package managers:
