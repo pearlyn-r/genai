@@ -13,6 +13,11 @@ whisper_model = whisper.load_model("base")
 
 # Float feature initialization
 float_init()
+# Create footer container for the microphone
+footer_container = st.container()
+with footer_container:
+    audio_bytes = audio_recorder()
+
 
 # Function to get relevant context from the vault based on user input
 def get_relevant_context(user_input, vault_embeddings, vault_content, top_k=3):
@@ -33,8 +38,8 @@ def get_relevant_context(user_input, vault_embeddings, vault_content, top_k=3):
     relevant_context = [vault_content[idx].strip() for idx in top_indices]
     return relevant_context
 
-def ollama_chat(user_input, system_message, vault_embeddings, vault_content, ollama_model, conversation_history):
-    relevant_context = get_relevant_context(user_input, vault_embeddings, vault_content)
+def ollama_chat(input, system_message, vault_embeddings, vault_content, ollama_model, conversation_history):
+    relevant_context = get_relevant_context(input, vault_embeddings, vault_content)
     if relevant_context:
         context_str = "\n\n".join(relevant_context)
         st.write("Context Pulled from Documents: \n\n" )
@@ -42,7 +47,7 @@ def ollama_chat(user_input, system_message, vault_embeddings, vault_content, oll
         st.write("No relevant context found.")
 
     if relevant_context:
-        user_input_with_context = user_input + "\n\nRelevant Context:\n" + context_str
+        user_input_with_context = input + "\n\nRelevant Context:\n" + context_str
 
     conversation_history.append({"role": "user", "content": user_input_with_context})
 
@@ -63,7 +68,7 @@ def ollama_chat(user_input, system_message, vault_embeddings, vault_content, oll
     return assistant_response
 
 # Streamlit app
-st.title("Mutual Fund Advisor with Llama3")
+st.title("Mutual Fund Advisor withs Llama3")
 
 # Configuration for the Ollama API client
 base_url = 'http://localhost:11434/v1'
@@ -99,9 +104,10 @@ if 'conversation_history' not in st.session_state:
     st.session_state.conversation_history = []
 
 if 'system_message' not in st.session_state:
-    st.session_state.system_message = """You are a helpful assistant and your primary role is that of a financial advisor to learn about the users financial profile 
-    and preferences and  bring in extra relevant information to the user query from outside the given context.Extract relevant information from the text provided to
-    Ultimately helping the user to make a decision of what to invest."""
+    st.session_state.system_message = """You are a helpful assistant and your primary role is that of a financial advisor to learn about the user's financial profile 
+and preferences and bring in extra relevant information to the user query from outside the given context. Extract relevant information from the text provided to
+ultimately help the user make a decision on what to invest by making normal conversation with them Your role is to have a natural conversation with the user, understand their financial situation and preferences,
+and provide tailored advice and suggestions for potential investments or financial strategies."""
 
 # Display conversation history
 if st.session_state.conversation_history:
@@ -111,10 +117,16 @@ if st.session_state.conversation_history:
         elif msg["role"] == "assistant":
             st.write(f"**Assistant:** {msg['content']}")
 
-# Create footer container for the microphone
-footer_container = st.container()
-with footer_container:
-    audio_bytes = audio_recorder()
+
+# Function to generate response from the chatbot
+def generate_response(transcript):
+    response = ollama.chat(model='llama3', stream=True, messages=st.session_state.messages)
+    full_message = ""
+    for partial_resp in response:
+        token = partial_resp["message"]["content"]
+        full_message += token
+        yield token
+    return full_message
 
 # Transcribe audio if recording is available
 if audio_bytes:
@@ -137,15 +149,21 @@ if audio_bytes:
             response = ollama_chat(transcript, st.session_state.system_message, vault_embeddings_tensor, vault_content, ollama_model, st.session_state.conversation_history)
             st.write(f"**Assistant:** {response}")
 
+            
             footer_container.float("bottom: 0rem;")
 
 # Input for text query (always at the bottom)
 user_input = st.text_input("Ask a query about your documents", key="user_input")
 
-if st.button("Submit"):
+if st.button("Submit", key="submit_button"):
     if user_input:
         response = ollama_chat(user_input, st.session_state.system_message, vault_embeddings_tensor, vault_content, ollama_model, st.session_state.conversation_history)
         st.write(f"**Assistant:** {response}")
+    
         st.experimental_rerun()
+        
     else:
         st.write("Please enter a query.")
+
+# Ensure the footer container is always displayed
+footer_container.write("")
