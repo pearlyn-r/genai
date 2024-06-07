@@ -6,6 +6,7 @@ This project integrates Automatic Speech Recognition (ASR) and Large Language Mo
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [Key Buisness Needs](#key_buisness_needs)
 - [Technologies Used](#technologies-used)
 - [Hardware Requirements](#hardware-requirements)
 - [Setup Instructions](#setup-instructions)
@@ -21,6 +22,33 @@ The Mutual Fund Advisor project leverages state-of-the-art AI technologies to pr
 - **Contextual Understanding:** The system retrieves relevant information from a pre-loaded vault of documents.
 - **Conversational AI:** Uses LLaMA 3 to generate human-like responses.
 - **Real-time Transcription:** Converts voice input to text using Whisper.
+
+## Key Business Needs
+
+ ####  Enhanced Customer Service 
+- **24/7 Availability**: Provides round-the-clock assistance, ensuring access to financial advice anytime.
+- **Instant Response**: Reduces wait times with immediate responses to customer queries.
+
+ #### Personalized Financial Advice
+- **Tailored Recommendations**: Offers personalized investment suggestions based on individual profiles and preferences.
+- **Contextual Assistance**: Uses relevant information from documents and past interactions for accurate advice.
+
+ #### Increased Operational Efficiency
+- **Reduced Workload for Human Advisors**: Handles routine inquiries, allowing human advisors to focus on complex tasks.
+- **Scalability**: Manages unlimited customer interactions simultaneously, scaling advisory services efficiently.
+
+ #### Customer Engagement and Retention
+- **Improved Interaction Quality**: Engages customers with conversational AI, enhancing the experience.
+- **Proactive Engagement**: Alerts customers to timely investment opportunities and market trends based on their profiles.
+
+#### Data-Driven Insights
+- **Customer Behavior Analysis**: Analyzes interactions to understand customer preferences and pain points.
+- **Market Trends Identification**: Aggregates data to identify broader market trends and customer sentiment.
+
+#### Competitive Advantage
+- **Innovation Leadership**: Positions the bank as a leader in AI technology, attracting tech-savvy customers.
+- **Differentiation**: Offers a unique voice-activated financial advisor, setting the bank apart from competitors.
+
 
 ## Technologies Used
 
