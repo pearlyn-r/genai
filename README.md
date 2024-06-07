@@ -33,10 +33,6 @@ The Mutual Fund Advisor project leverages state-of-the-art AI technologies to pr
 - **Tailored Recommendations**: Offers personalized investment suggestions based on individual profiles and preferences.
 - **Contextual Assistance**: Uses relevant information from documents and past interactions for accurate advice.
 
- #### Increased Operational Efficiency
-- **Reduced Workload for Human Advisors**: Handles routine inquiries, allowing human advisors to focus on complex tasks.
-- **Scalability**: Manages unlimited customer interactions simultaneously, scaling advisory services efficiently.
-
  #### Customer Engagement and Retention
 - **Improved Interaction Quality**: Engages customers with conversational AI, enhancing the experience.
 - **Proactive Engagement**: Alerts customers to timely investment opportunities and market trends based on their profiles.
