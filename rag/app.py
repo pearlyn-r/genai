@@ -16,7 +16,6 @@ initialize_session_state()
 whisper_model = initialize_whisper_model()
 client = initialize_ollama_client(BASE_URL, API_KEY)
 vault_content = load_vault_content("data/vault.txt")
-vault_embeddings_tensor = generate_vault_embeddings(vault_content, OLLAMA_MODEL) if vault_content else torch.tensor([])
 
 def display_conversation_history():
     for msg in st.session_state.conversation_history:
@@ -41,7 +40,7 @@ def main():
         transcript = handle_audio_input(audio_bytes, whisper_model)
         if transcript:
             st.write(f"**Transcribed Text:** {transcript}")
-            response = ollama_chat(transcript, st.session_state.system_message, vault_embeddings_tensor, vault_content, OLLAMA_MODEL, st.session_state.conversation_history, client)
+            response = ollama_chat(transcript, st.session_state.system_message, vault_content, OLLAMA_MODEL, st.session_state.conversation_history, client)
             st.write(f"**Assistant:** {response}")
             st.session_state.audio_processed = True
             
