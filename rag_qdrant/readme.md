@@ -25,8 +25,8 @@ The Mutual Fund Advisor application helps users make informed decisions about mu
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/mutual-fund-advisor.git
-    cd mutual-fund-advisor
+    git clone https://github.com/pearlyn-r/genai
+    cd rag_qdrant
     ```
 
 2. Install the required dependencies:
