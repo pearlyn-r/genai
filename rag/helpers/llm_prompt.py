@@ -1,6 +1,6 @@
 import streamlit as st
 from config.constants import OLLAMA_MODEL
-from helpers.embeddings import get_relevant_context
+
 
 def ollama_chat(input, system_message, vault_content, ollama_model, conversation_history, client):
     print("Called: ollama_chat")
