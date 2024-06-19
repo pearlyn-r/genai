@@ -17,6 +17,7 @@ The Mutual Fund Advisor application helps users make informed decisions about mu
 ## Features
 
 - Record and transcribe user audio input.
+- Embeddings generated using mxbai-embed-large model
 - Generate responses based on user input and context using Llama3.
 - Maintain a conversation history between the user and the assistant.
 - Utilize Qdrant client vector database for efficient embedding management and retrieval.
