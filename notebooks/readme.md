@@ -20,7 +20,6 @@ This table provides a comparison of various speech recognition models on differe
  - **MIT License**: A permissive open-source license that allows for commercial use, modification, distribution, and private use.
  - **BSD 3-Clause License**: Another permissive open-source license that allows for commercial use, modification, and distribution.
  - **Apache 2.0 License**: An open-source license that allows for commercial use, modification, and distribution, but with certain conditions for patent rights.
- - **Proprietary**: Indicates that the model is not open-source and is owned by a company, typically requiring a paid license or subscription for use.
-- **Free/Paid**: Indicates whether the model is available for free or requires a paid subscription/license.
+ - **Proprietary**: Indicates that the model is not open-source and is owned by a company, hence requiring a paid license or subscription for use.
 
 These results can be used to evaluate and compare the performance, accessibility, and licensing options of different speech recognition models based on your specific requirements and constraints.
