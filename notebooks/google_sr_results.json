@@ -1,0 +1,92 @@
+{
+    "/content/OSR_us_000_0010_8k.mp4a": {
+        "transcript": null,
+        "latency": null,
+        "error": "An error occurred while processing file; [Errno 2] No such file or directory: '/content/OSR_us_000_0010_8k.mp4a'"
+    },
+    "/content/another_file.mp4a": {
+        "transcript": null,
+        "latency": null,
+        "error": "An error occurred while processing file; [Errno 2] No such file or directory: '/content/another_file.mp4a'"
+    },
+    "/content/Recording.m4a": {
+        "transcript": "what is the best way to diversify my portfolio",
+        "latency": 0.9446926116943359
+    },
+    "/content/Recording (2).m4a": {
+        "transcript": "how much should I be saving for retirement each month",
+        "latency": 1.0484797954559326
+    },
+    "/content/Recording (3).m4a": {
+        "transcript": "what are the benefits of investing in mutual funds versus individual stocks",
+        "latency": 1.3412163257598877
+    },
+    "/content/Recording (4).m4a": {
+        "transcript": "can you explain the difference between a Roth IRA and a traditional IRA",
+        "latency": 1.781747579574585
+    },
+    "/content/Recording (5).m4a": {
+        "transcript": "is my current this tolerance and how should it impact my investment strategy",
+        "latency": 1.7261362075805664
+    },
+    "/content/Recording (6).m4a": {
+        "transcript": "how can I protect my investments during a market downturn",
+        "latency": 0.9529943466186523
+    },
+    "/content/Recording (7).m4a": {
+        "transcript": "what are the tax implications of selling my investments",
+        "latency": 1.069918155670166
+    },
+    "/content/Recording (8).m4a": {
+        "transcript": "should I consider investing in real estate as part of my portfolio",
+        "latency": 1.0710675716400146
+    },
+    "/content/Recording (9).m4a": {
+        "transcript": "how often should I review and rebalance my Investment Portfolio",
+        "latency": 1.0118739604949951
+    },
+    "/content/Recording (10).m4a": {
+        "transcript": "what are the best options for generating passive income through Investments",
+        "latency": 1.0374886989593506
+    },
+    "/content/Recording (11).m4a": {
+        "transcript": "can you help me understand the fees associated with my investment accounts",
+        "latency": 1.1115314960479736
+    },
+    "/content/Recording (12).m4a": {
+        "transcript": "what are the potential risks and rewards of investing in cryptocurrency",
+        "latency": 1.487950325012207
+    },
+    "/content/Recording (13).m4a": {
+        "transcript": "how do I set up an emergency fund and how much should it be",
+        "latency": 1.0615811347961426
+    },
+    "/content/Recording (14).m4a": {
+        "transcript": "what are the advantages of using a robo advisor for managing my investments",
+        "latency": 1.4644973278045654
+    },
+    "/content/Recording (15).m4a": {
+        "transcript": "how do interest rate changes affect my bond Investments",
+        "latency": 1.2828741073608398
+    },
+    "/content/Recording (16).m4a": {
+        "transcript": "is now a good time to invest in the stock market given my current economic condition",
+        "latency": 1.1930184364318848
+    },
+    "/content/Recording (17).m4a": {
+        "transcript": "what are some strategies for maximizing my 401k contributions",
+        "latency": 1.304410457611084
+    },
+    "/content/Recording (18).m4a": {
+        "transcript": "how can I make my investments aligned with my ethical values",
+        "latency": 1.2005367279052734
+    },
+    "/content/Recording (19).m4a": {
+        "transcript": "what is the difference between growth stocks and value stocks and which should I invest in",
+        "latency": 1.2952501773834229
+    },
+    "/content/Recording (20).m4a": {
+        "transcript": "what factors should I consider when choosing between different mutual funds",
+        "latency": 1.1288173198699951
+    }
+}

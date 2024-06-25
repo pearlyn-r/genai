@@ -1,0 +1,102 @@
+{
+    "/content/Recording.m4a": {
+        "transcript": "What is the best way to diversify my portfolio?",
+        "confidence": 0.9931132,
+        "latency": 5.0641796588897705
+    },
+    "/content/Recording (2).m4a": {
+        "transcript": "How much should I be saving for retirement each month?",
+        "confidence": 0.99571854,
+        "latency": 2.3240272998809814
+    },
+    "/content/Recording (3).m4a": {
+        "transcript": "What are the benefits of investing in mutual funds versus individual stocks?",
+        "confidence": 0.99722904,
+        "latency": 2.3931632041931152
+    },
+    "/content/Recording (4).m4a": {
+        "transcript": "Can you explain the difference between, Roth IRA and a traditional IRA?",
+        "confidence": 0.9903133,
+        "latency": 2.520038604736328
+    },
+    "/content/Recording (5).m4a": {
+        "transcript": "What is my current risk tolerance, and how should it impact my investment strategy?",
+        "confidence": 0.9969363,
+        "latency": 2.2565767765045166
+    },
+    "/content/Recording (6).m4a": {
+        "transcript": "How can I protect my investments during a market downturn?",
+        "confidence": 0.998393,
+        "latency": 3.2388219833374023
+    },
+    "/content/Recording (7).m4a": {
+        "transcript": "What are the tax implications of selling my investments?",
+        "confidence": 0.9985586,
+        "latency": 2.086918592453003
+    },
+    "/content/Recording (8).m4a": {
+        "transcript": "Should I consider investing in real estate as part of my portfolio?",
+        "confidence": 0.99899215,
+        "latency": 1.718106746673584
+    },
+    "/content/Recording (9).m4a": {
+        "transcript": "How often should I review and rebalance my investment portfolio?",
+        "confidence": 0.9998104,
+        "latency": 1.8216524124145508
+    },
+    "/content/Recording (10).m4a": {
+        "transcript": "What are the best options for generating passive income through investments?",
+        "confidence": 0.999315,
+        "latency": 1.7471904754638672
+    },
+    "/content/Recording (11).m4a": {
+        "transcript": "Can you help me understand the fees associated with my investment accounts?",
+        "confidence": 0.9996438,
+        "latency": 1.9451773166656494
+    },
+    "/content/Recording (12).m4a": {
+        "transcript": "What are the potential risks and rewards of investing in cryptocurrency?",
+        "confidence": 0.9977302,
+        "latency": 1.9016315937042236
+    },
+    "/content/Recording (13).m4a": {
+        "transcript": "How do I set up an emergency fund, and how much should it be?",
+        "confidence": 0.9996511,
+        "latency": 2.378396511077881
+    },
+    "/content/Recording (14).m4a": {
+        "transcript": "What are the advantages of using a robo advisor for managing my investments?",
+        "confidence": 0.9986696,
+        "latency": 2.356696844100952
+    },
+    "/content/Recording (15).m4a": {
+        "transcript": "How do interest rate changes affect my bond investments?",
+        "confidence": 0.9989779,
+        "latency": 2.443208932876587
+    },
+    "/content/Recording (16).m4a": {
+        "transcript": "Is now a good time to invest in the stock market given my current economic condition?",
+        "confidence": 0.9978861,
+        "latency": 2.2243921756744385
+    },
+    "/content/Recording (17).m4a": {
+        "transcript": "What are some strategies for maximizing my 401k contributions?",
+        "confidence": 0.9900933,
+        "latency": 2.233893632888794
+    },
+    "/content/Recording (18).m4a": {
+        "transcript": "How can I make my investments align with my ethical values?",
+        "confidence": 0.99746394,
+        "latency": 2.1511423587799072
+    },
+    "/content/Recording (19).m4a": {
+        "transcript": "What is the difference between growth stocks and value stocks, and which should I invest in?",
+        "confidence": 0.9982918,
+        "latency": 2.3627474308013916
+    },
+    "/content/Recording (20).m4a": {
+        "transcript": "What factors should I consider when choosing between different mutual funds?",
+        "confidence": 0.99453825,
+        "latency": 2.3564929962158203
+    }
+}
