@@ -50,6 +50,7 @@ def upsert_to_qdrant(full_text, ollama_model, collection_name):
     return operation_info
 
 def search_qdrant(query, ollama_model, collection_name, limit=3):
+    print("searching in vdb")
     embeddings = get_embedding(query, ollama_model)
     search_result = qdrant_client.search(
         collection_name=collection_name,

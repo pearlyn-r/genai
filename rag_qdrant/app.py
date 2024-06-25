@@ -9,8 +9,6 @@ from helpers.llm_prompt import ollama_chat
 from audio.audio_input import handle_audio_input
 from config.session_state import initialize_session_state
 
-
-
 float_init()
 initialize_session_state()
 whisper_model = initialize_whisper_model()
