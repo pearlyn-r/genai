@@ -63,10 +63,10 @@ if audio_bytes:
 
             # Generate response from chatbot
             assistant_response = ''.join(token for token in generate_response(transcript))
-            
+
             # Display assistant response and update session state messages
             st.write(st.chat_message("assistant", avatar="🤖").write(assistant_response))
             st.session_state.messages.append({"role": "assistant", "content": assistant_response})
-            
+
 
             footer_container.float("bottom: 0rem;")
